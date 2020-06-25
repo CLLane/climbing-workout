@@ -11,7 +11,7 @@ class App extends Component {
   }
 
   updateNavState = (navSelection) => {
-    this.setState({...state, navState: navSelection})
+    this.setState({...this.state, navState: navSelection})
   }
 
   render() {

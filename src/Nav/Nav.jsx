@@ -1,10 +1,11 @@
 import React from 'react';
 import "./Nav.css";
-const {updateNavState} = this.props
-export const Nav = () => {
+
+export const Nav = (props) => {
+  console.log('props', props)
   return (
     <nav>
-      <p onClick={() => updateNavState("4x4")}>Four by Fours</p>
+      <p onClick={() => this.props.updateNavState("4x4")}>Four by Fours</p>
     </nav>
   )
 }
