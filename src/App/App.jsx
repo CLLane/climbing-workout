@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import {Nav} from "../Nav/Nav";
+import {Training} from "../Training/Training"
 
 class App extends Component {
   constructor() {
@@ -20,7 +21,7 @@ class App extends Component {
     return (
     <div>
       <Nav updateNavState={this.updateNavState}></Nav>
-      {navState === '4x4' && <h1>{navState}</h1>}
+      {navState === '4x4' && <Training type={this.state.navState}></Training>}
     </div>
     );
   }
