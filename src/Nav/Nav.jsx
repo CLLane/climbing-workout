@@ -5,7 +5,7 @@ export const Nav = (props) => {
   console.log('props', props)
   return (
     <nav>
-      <p onClick={() => this.props.updateNavState("4x4")}>Four by Fours</p>
+      <p onClick={() => props.updateNavState("4x4")}>Four by Fours</p>
     </nav>
   )
 }

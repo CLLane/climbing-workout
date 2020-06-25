@@ -12,13 +12,15 @@ class App extends Component {
 
   updateNavState = (navSelection) => {
     this.setState({...this.state, navState: navSelection})
+    // console.log('this.state :>> ', this.state);
   }
 
   render() {
+    const {navState} = this.state;
     return (
     <div>
-      <h1>Bouldering Training</h1>
       <Nav updateNavState={this.updateNavState}></Nav>
+      {navState === '4x4' && <h1>{navState}</h1>}
     </div>
     );
   }
